@@ -3,6 +3,7 @@ node_modules/
 html&css/
 dist/
 publicDir/
+.vscode/
 
 *.zip
 docs/
