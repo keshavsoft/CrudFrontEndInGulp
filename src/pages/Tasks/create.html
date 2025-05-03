@@ -20,26 +20,26 @@
 
 <head>
     @@include('./_headWithBSTable.html', {
-    "path": "../../..",
+    "path": "../..",
     "title": "Volt Free Bootstrap Dashboard - Bootstrap Tables"
     })
 </head>
 
 <body>
-    @@include('./FrConf/Tasks/_nav.html', {
-    "path": "../../.."
+    @@include('./Tasks/_nav.html', {
+    "path": "../.."
     })
 
-    @@include('./FrConf/Tasks/_sidenav.html', {
-    "path": "../../..",
+    @@include('./Tasks/_sidenav.html', {
+    "path": "../..",
     "page": "Create",
     "page_group":"Create"
     })
 
     <main class="content">
 
-        @@include('./FrConf/Tasks/_topbar.html', {
-        "path": "../../.."
+        @@include('./Tasks/_topbar.html', {
+        "path": "../.."
         })
 
         <div class="d-flex justify-content-between w-100 flex-wrap">
@@ -59,7 +59,7 @@
                             <li class="breadcrumb-item"><a href="#">StudentsCRUD</a></li>
                             <li class="breadcrumb-item"><a href="#">pages</a></li>
                             <li class="breadcrumb-item"><a href="../../index.html">FrConf</a></li>
-                            <li class="breadcrumb-item"><a href="../../FrConf/index.html">Tasks</a></li>
+                            <li class="breadcrumb-item"><a href="../FrConf/index.html">Tasks</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Create</li>
                     </ol>
                 </nav>
@@ -121,10 +121,10 @@
     </main>
 
     @@include('./FrConf/Tasks/_scriptsWithCount.html', {
-    "path": "../../.."
+    "path": "../.."
     })
 
-    <script type="module" src="../../../Js/FrConf/Tasks/Create/entryFile.js"></script>
+    <script type="module" src="../../Js/FrConf/Tasks/Create/entryFile.js"></script>
 
 </body>
 
