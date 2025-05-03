@@ -19,7 +19,7 @@
 <html lang="en">
 
 <head>
-    @@include('./FrConf/Tasks/_headWithCalendar.html', {
+    @@include('./Tasks/_headWithCalendar.html', {
     "path": "../../..",
     "title": "Volt Free Bootstrap Dashboard - Bootstrap FixedCol"
     })
@@ -27,8 +27,8 @@
 </head>
 
 <body>
-    @@include('./FrConf/Tasks/_nav.html', {
-    "path": "../../.."
+    @@include('./Tasks/_nav.html', {
+    "path": "../.."
     })
 
     @@include('./Tasks/_sidenav.html', {
@@ -38,8 +38,8 @@
     })
 
     <main class="content">
-        @@include('./FrConf/Tasks/_topbar.html', {
-        "path": "../../.."
+        @@include('./Tasks/_topbar.html', {
+        "path": "../.."
         })
 
         <div class="row">
@@ -48,14 +48,14 @@
             </div>
         </div>
 
-        @@include('./FrConf/Tasks/_footer.html', {
+        @@include('./Tasks/_footer.html', {
         "path": "../../..",
         "classes": "bg-gray-800 text-white"
         })
     </main>
 
     @@include('./FrConf/Tasks/_scriptsWithCount.html', {
-    "path": "../../.."
+    "path": "../.."
     })
 
     <script>
