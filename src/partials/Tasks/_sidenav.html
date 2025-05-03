@@ -72,7 +72,7 @@
                         <span class="sidebar-icon text-info">
                             <i class="bi bi-plus-circle-fill"></i>
                         </span>
-                        <span class="sidebar-text">Create</span>
+                        <span class="sidebar-text">Calendar</span>
                     </span>
                     <span class="link-arrow">
                         <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20"
@@ -83,12 +83,18 @@
                         </svg>
                     </span>
                 </span>
-                <div class="multi-level collapse @@if (context.page_group === 'Create') { show }" role="list"
+                <div class="multi-level collapse @@if (context.page_group === 'Calendar') { show }" role="list"
                     id="@@page_groupCreate" aria-expanded="false">
                     <ul class="flex-column nav">
-                        <li class="nav-item @@if (context.page === 'Create') { active }">
-                            <a class="nav-link" href="create.html">
-                                <span class="sidebar-text">Create</span>
+                        
+                        <li class="nav-item @@if (context.page === 'calendar') { active }">
+                            <a class="nav-link" href="./calendar.html">
+                                <span class="sidebar-text">Simple</span>
+                            </a>
+                        </li>
+                        <li class="nav-item @@if (context.page === 'calendarToday') { active }">
+                            <a class="nav-link" href="./calendarToday.html">
+                                <span class="sidebar-text">Today</span>
                             </a>
                         </li>
                     </ul>
