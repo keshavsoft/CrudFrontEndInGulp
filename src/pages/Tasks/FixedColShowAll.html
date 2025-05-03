@@ -20,25 +20,25 @@
 
 <head>
     @@include('./_headWithBSTable.html', {
-    "path": "../../..",
+    "path": "../..",
     "title": "Volt Free Bootstrap Dashboard - Bootstrap FixedCol"
     })
 </head>
 
 <body>
-    @@include('./FrConf/Tasks/_nav.html', {
-    "path": "../../.."
+    @@include('./Tasks/_nav.html', {
+    "path": "../.."
     })
 
-    @@include('./FrConf/Tasks/_sidenav.html', {
-    "path": "../../..",
+    @@include('./Tasks/_sidenav.html', {
+    "path": "../..",
     "page": "FixedColShowAll",
     "page_group": "FixedColumns"
     })
 
     <main class="content">
-        @@include('./FrConf/Tasks/_topbar.html', {
-        "path": "../../.."
+        @@include('./Tasks/_topbar.html', {
+        "path": "../.."
         })
         <div class="py-4">
             <div class="d-flex justify-content-between w-100 flex-wrap">
@@ -93,17 +93,17 @@
             </div>
         </div>
 
-        @@include('./FrConf/Tasks/_footer.html', {
-        "path": "../../..",
+        @@include('./Tasks/_footer.html', {
+        "path": "../..",
         "classes": "bg-gray-800 text-white"
         })
     </main>
 
-    @@include('./FrConf/Tasks/_scriptsWithCount.html', {
-    "path": "../../.."
+    @@include('./Tasks/_scriptsWithCount.html', {
+    "path": "../.."
     })
 
-    <script type="module" src="../../../Js/FrConf/Tasks/FixedColShowAll/entryFile.js"></script>
+    <script type="module" src="../../Js/FrConf/Tasks/FixedColShowAll/entryFile.js"></script>
 
 </body>
 
