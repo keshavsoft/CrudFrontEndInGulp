@@ -1,17 +1,26 @@
-import DataAsJson from './data.json' with {type: 'json'};
+import DataAsJson from './data.json' with { type: 'json' };
 
 let StartFunc = () => {
-    var calendarEl = document.getElementById('calendar');
+    const calendarEl = document.getElementById('calendar');
 
-    let today = new Date().toISOString().slice(0, 10)
+    const today = new Date().toISOString().slice(0, 10);
 
     jVarGlobalCalendar = new FullCalendar.Calendar(calendarEl, {
         initialDate: today,
+        initialView: 'timeGridWeek',
         editable: true,
         selectable: true,
         businessHours: true,
-        dayMaxEvents: true, // allow "more" link when too many events
-        events: DataAsJson
+        dayMaxEvents: true,
+        events: DataAsJson,
+        headerToolbar: {
+            left: 'title',
+            center: '',
+            right: 'prev,next today'
+        },
+        eventClick: function(info) {
+            alert(`Title: ${info.event.title}\nDate: ${info.event.startStr}`);
+        }
     });
 
     jVarGlobalCalendar.render();
