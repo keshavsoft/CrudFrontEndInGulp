@@ -86,7 +86,7 @@
                 <div class="multi-level collapse @@if (context.page_group === 'Calendar') { show }" role="list"
                     id="@@page_groupCreate" aria-expanded="false">
                     <ul class="flex-column nav">
-                        
+
                         <li class="nav-item @@if (context.page === 'calendar') { active }">
                             <a class="nav-link" href="./calendar.html">
                                 <span class="sidebar-text">Simple</span>
@@ -95,6 +95,11 @@
                         <li class="nav-item @@if (context.page === 'calendarToday') { active }">
                             <a class="nav-link" href="./calendarToday.html">
                                 <span class="sidebar-text">Today</span>
+                            </a>
+                        </li>
+                        <li class="nav-item @@if (context.page === 'calendarWeekly') { active }">
+                            <a class="nav-link" href="./calendarWeekly.html">
+                                <span class="sidebar-text">Weekly</span>
                             </a>
                         </li>
                     </ul>

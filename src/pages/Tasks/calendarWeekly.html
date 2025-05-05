@@ -1,0 +1,80 @@
+<!--
+
+=========================================================
+* Volt Free - Bootstrap 5 Dashboard
+=========================================================
+
+* Product Page: https://themesberg.com/product/admin-dashboard/volt-bootstrap-5-dashboard
+* Copyright 2021 Themesberg (https://www.themesberg.com)
+* License (https://themesberg.com/licensing)
+
+* Designed and coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./Tasks/_headWithCalendar.html', {
+    "path": "../..",
+    "title": "Volt Free Bootstrap Dashboard - Bootstrap FixedCol"
+    })
+
+</head>
+
+<body>
+    @@include('./Tasks/_nav.html', {
+    "path": "../.."
+    })
+
+    @@include('./Tasks/_sidenav.html', {
+    "path": "../../..",
+    "page": "calendarWeekly",
+    "page_group": "Calendar"
+    })
+
+    <main class="content">
+        @@include('./Tasks/_topbar.html', {
+        "path": "../.."
+        })
+
+        <div class="row">
+            <div class="col-7">
+                <div id="calendar"></div>
+            </div>
+        </div>
+
+        @@include('./Tasks/_footer.html', {
+        "path": "../../..",
+        "classes": "bg-gray-800 text-white"
+        })
+    </main>
+
+    @@include('./FrConf/Tasks/_scriptsWithCount.html', {
+    "path": "../.."
+    })
+
+    <script>
+        let jVarGlobalCalendar = null;
+
+        var calendarEl = document.getElementById('calendar');
+
+        const jFADdEvent = () => {
+            jVarGlobalCalendar.addEvent({
+                title: "3rd",
+                start: '2025-03-19',
+                className: 'bg-success'
+            });
+        };
+
+    </script>
+
+    <script type="module" src="../../Js/Tasks/CalendarWeekly/entryFile.js"></script>
+
+</body>
+
+</html>
