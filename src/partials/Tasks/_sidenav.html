@@ -67,7 +67,7 @@
             <li class="nav-item">
                 <span
                     class="nav-link @@if (context.page_group !== 'Create') { collapsed } d-flex justify-content-between align-items-center"
-                    data-bs-toggle="collapse" data-bs-target="#@@page_groupCreate">
+                    data-bs-toggle="collapse" data-bs-target="#CalendarMenu">
                     <span>
                         <span class="sidebar-icon text-info">
                             <i class="bi bi-plus-circle-fill"></i>
@@ -84,7 +84,7 @@
                     </span>
                 </span>
                 <div class="multi-level collapse @@if (context.page_group === 'Calendar') { show }" role="list"
-                    id="@@page_groupCreate" aria-expanded="false">
+                    id="CalendarMenu" aria-expanded="false">
                     <ul class="flex-column nav">
 
                         <li class="nav-item @@if (context.page === 'calendar') { active }">
@@ -109,7 +109,7 @@
             <li class="nav-item">
                 <span
                     class="nav-link @@if (context.page_group !== 'Create') { collapsed } d-flex justify-content-between align-items-center"
-                    data-bs-toggle="collapse" data-bs-target="#@@page_groupCreate">
+                    data-bs-toggle="collapse" data-bs-target="#ChartsMenu">
                     <span>
                         <span class="sidebar-icon text-info">
                             <i class="bi bi-plus-circle-fill"></i>
@@ -126,7 +126,7 @@
                     </span>
                 </span>
                 <div class="multi-level collapse @@if (context.page_group === 'Charts') { show }" role="list"
-                    id="@@page_groupCreate" aria-expanded="false">
+                    id="ChartsMenu" aria-expanded="false">
                     <ul class="flex-column nav">
 
                         <li class="nav-item @@if (context.page === 'lineChart') { active }">
