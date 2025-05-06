@@ -44,26 +44,7 @@
     })
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            new Chart(document.getElementById('pieChart'), {
-                type: 'pie',
-                data: {
-                    labels: ['Work', 'Personal', 'Others'],
-                    datasets: [{
-                        data: [50, 30, 20],
-                        backgroundColor: ['#e74c3c', '#f1c40f', '#3498db']
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: { position: 'bottom' }
-                    }
-                }
-            });
-        });
-    </script>
+    <script type="module" src="../../Js/Tasks/PieChart/entryFile.js"></script> 
 </body>
 
 </html>

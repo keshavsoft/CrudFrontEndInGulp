@@ -43,31 +43,9 @@
         "path": "../.."
     })
 
+    <script type="module" src="../../Js/Tasks/LineChart/entryFile.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            new Chart(document.getElementById('lineChart'), {
-                type: 'line',
-                data: {
-                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
-                    datasets: [{
-                        label: 'Events Scheduled',
-                        data: [3, 10, 5, 2, 8],
-                        borderColor: '#1abc9c',
-                        backgroundColor: 'rgba(26, 188, 156, 0.1)',
-                        tension: 0.4,
-                        fill: true
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: { position: 'top' }
-                    }
-                }
-            });
-        });
-    </script>
+    
 </body>
 
 </html>

@@ -44,27 +44,7 @@
     })
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            new Chart(document.getElementById('barChart'), {
-                type: 'bar',
-                data: {
-                    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
-                    datasets: [{
-                        label: 'Tasks Completed',
-                        data: [12, 19, 3, 5, 2],
-                        backgroundColor: '#4c84ff'
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: { display: false }
-                    }
-                }
-            });
-        });
-    </script>
+    <script type="module" src="../../Js/Tasks/BarChart/entryFile.js"></script> 
 </body>
 
 </html>
