@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./Tasks/_headWithCalendar.html', {
+        "path": "../..",
+        "title": "Volt Dashboard - Line Chart"
+    })
+</head>
+
+<body>
+    @@include('./Tasks/_nav.html', {
+        "path": "../.."
+    })
+
+    @@include('./Tasks/_sidenav.html', {
+        "path": "../../..",
+        "page": "lineChart",
+        "page_group": "Charts"
+    })
+
+    <main class="content">
+        @@include('./Tasks/_topbar.html', {
+            "path": "../.."
+        })
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card p-4">
+                    <h5 class="card-title">Events Scheduled (Line)</h5>
+                    <canvas id="lineChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        @@include('./Tasks/_footer.html', {
+            "path": "../../..",
+            "classes": "bg-gray-800 text-white"
+        })
+    </main>
+
+    @@include('./FrConf/Tasks/_scriptsWithCount.html', {
+        "path": "../.."
+    })
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new Chart(document.getElementById('lineChart'), {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                    datasets: [{
+                        label: 'Events Scheduled',
+                        data: [3, 10, 5, 2, 8],
+                        borderColor: '#1abc9c',
+                        backgroundColor: 'rgba(26, 188, 156, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'top' }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
